@@ -262,3 +262,30 @@ footer textarea{
 footer input[type="submit"]{
     text-align: center;
 }
+
+
+
+/* Responsive */
+.hide{
+    display: none;
+}
+
+@media screen  and (max-width: 576px){
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-items
+    {
+        flex-direction: column;
+    }
+
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .footer-column{
+        /* width: 100%; */
+        width: calc(100% - 40px);
+    }
+}
